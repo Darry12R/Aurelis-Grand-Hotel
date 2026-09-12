@@ -1,0 +1,9 @@
+from pathlib import Path
+p=Path('outputs/aurelis/dist/styles.css')
+s=p.read_text(encoding='utf-8')
+s+='\n/* Final readability and image-loading treatment */\n.experience img{inset:0}.menu-card p{font-size:14px}.menu-card small{font-size:12px}.card-bottom button{font-size:12px}.menu-tabs button{font-size:13px}.filters button{font-size:12px}.intro p:not(.lead),.chef-section p,.room-teaser p,.modal p{font-size:16px}.form-grid label,form>label{font-size:14px}.modal .fine-print{font-size:12px}.allergy p{font-size:13px}.hero-bottom{padding-right:150px}.card-image:has(img:not(.loaded)):before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,#191714,#29251e,#191714);background-size:200% 100%;animation:shimmer 1.4s infinite}.image-open img{opacity:1}.experience-content p{font-size:14px}.wine-row p{font-size:14px}@media(max-width:700px){.hero-bottom{bottom:86px;padding-right:0}.hero-caption{bottom:119px}.filters button{font-size:11px}.menu-card p{font-size:14px}.menu-card small{font-size:12px}.hero-copy p{font-size:14px}.modal p{font-size:14px}.intro p:not(.lead),.chef-section p,.room-teaser p{font-size:16px}.form-grid label,form>label{font-size:13px}.modal .fine-print{font-size:12px}}\n'
+p.write_text(s,encoding='utf-8')
+p=Path('outputs/aurelis/dist/js/app.js')
+s=p.read_text(encoding='utf-8').replace("function observe(){", "document.addEventListener('load',e=>{if(e.target.tagName==='IMG')e.target.classList.add('loaded')},true);\nfunction observe(){document.querySelectorAll('img').forEach(im=>{if(im.complete&&im.naturalWidth)im.classList.add('loaded')});")
+s=s.replace("function render(){document.documentElement.lang=state.lang;", "function render(){document.documentElement.lang=state.lang;document.title=isRoom()?'Room Service | Aurelis Grand Hotel':'Maison Aurelis | Aurelis Grand Hotel';")
+p.write_text(s,encoding='utf-8')

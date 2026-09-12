@@ -1,0 +1,13 @@
+{
+  "event": true,
+  "concierge": true,
+  "breakfastSchedule": true,
+  "englishForms": true,
+  "pairing": true,
+  "wineFilter": true,
+  "gallery": true,
+  "paymentMethods": true,
+  "keyboardFocus": true,
+  "imageErrors": [],
+  "errors": []
+}

@@ -1,0 +1,101 @@
+{
+  "results": [
+    {
+      "test": "no overflow 1920",
+      "pass": true
+    },
+    {
+      "test": "no overflow 1440",
+      "pass": true
+    },
+    {
+      "test": "no overflow 1280",
+      "pass": true
+    },
+    {
+      "test": "no overflow 1024",
+      "pass": true
+    },
+    {
+      "test": "no overflow 768",
+      "pass": true
+    },
+    {
+      "test": "no overflow 430",
+      "pass": true
+    },
+    {
+      "test": "no overflow 390",
+      "pass": true
+    },
+    {
+      "test": "no overflow 360",
+      "pass": true
+    },
+    {
+      "test": "search Wagyu",
+      "pass": true
+    },
+    {
+      "test": "favorites persist",
+      "pass": true
+    },
+    {
+      "test": "cart correct",
+      "pass": true
+    },
+    {
+      "test": "notes editable",
+      "pass": true
+    },
+    {
+      "test": "required fields",
+      "pass": true
+    },
+    {
+      "test": "order success",
+      "pass": true
+    },
+    {
+      "test": "order status",
+      "pass": true
+    },
+    {
+      "test": "reservation success",
+      "pass": true
+    },
+    {
+      "test": "experience success",
+      "pass": true
+    },
+    {
+      "test": "room route",
+      "pass": true
+    },
+    {
+      "test": "breakfast cart",
+      "pass": true
+    },
+    {
+      "test": "mobile nav",
+      "pass": true
+    },
+    {
+      "test": "menu closes",
+      "pass": true
+    },
+    {
+      "test": "modal fits mobile",
+      "pass": true
+    },
+    {
+      "test": "vegan filter",
+      "pass": true
+    },
+    {
+      "test": "no runtime errors",
+      "pass": true
+    }
+  ],
+  "errors": []
+}
