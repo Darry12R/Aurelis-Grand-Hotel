@@ -17,7 +17,7 @@ Abrir `http://127.0.0.1:4173`. La página específica de servicio en habitación
 - `dist/js/components.js`: Header, Hero, RestaurantIntro, MenuCategories, MenuCard, Experiences, Reservations, Chef, WineCellar, Gallery, RoomService, PrivateEvents, Hotel, Testimonials y Footer.
 - `dist/js/dialogs.js`: modales, carrito, checkout, reservas, formularios y confirmaciones.
 - `dist/js/data.js`: 28 productos, categorías, experiencias, vinos y horarios ficticios.
-- `dist/js/state.js`: estado local, persistencia, precios, escape de contenido y utilidades de interfaz.
+- `dist/js/state.js`: estado temporal en memoria, precios, escape de contenido y utilidades de interfaz.
 - `dist/js/i18n.js`: traducción ES/EN de la interfaz y contenido editorial principal.
 - `dist/js/app.js`: navegación, eventos y coordinación de componentes.
 - `dist/styles.css`: sistema visual, responsive y preferencias de movimiento reducido.
@@ -27,7 +27,7 @@ Abrir `http://127.0.0.1:4173`. La página específica de servicio en habitación
 
 Carta con búsqueda instantánea, filtros, favoritos, disponibilidad simulada, ingredientes y alérgenos. Carrito editable con cantidades e instrucciones y servicio del 10%. Checkout de cuatro etapas con room service, recogida y servicio en mesa; métodos de pago simulados. Reservas de mesa, solicitudes de experiencias y eventos, desayuno programado, galería ampliable, concierge con respuestas locales y sommelier basado en reglas.
 
-El perfil de invitado permite consultar los pedidos y solicitudes guardados en este navegador. El apartado de privacidad permite borrar los datos locales.
+El perfil permite consultar pedidos y solicitudes de muestra durante esta visita. Todo se reinicia al recargar. El apartado de privacidad permite reiniciar la simulación; no lee ni borra datos persistidos por versiones anteriores. Véase `CAMBIOS-DEMO-2026-09-26.md`.
 
 ## Límites intencionados de la demostración
 
@@ -39,7 +39,7 @@ Para conectar una API, sustituir las operaciones de `state.js` y los controlador
 
 ## Comprobación
 
-`npm run check` revisa sintaxis JavaScript. Las verificaciones de navegador cubren anchos entre 360 y 1920 px, búsqueda, filtros, persistencia, edición del carrito, cálculo del 10%, checkout, reservas, experiencias, eventos, desayuno, galería, sommelier y teclado. Informes en `qa/`.
+`npm run check` revisa sintaxis JavaScript. Los informes anteriores en `qa/` describen la versión original y no validan esta corrección. `npm test` verifica el estado efímero, los flujos simulados y la configuración estática. La revisión visual y del despliegue debe repetirse antes de sustituir la demo publicada.
 
 ## Fotografías
 

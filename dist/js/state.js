@@ -1,6 +1,9 @@
-const read=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key))??fallback}catch{return fallback}};
-export const state={cart:read('aur-cart',[]),favorites:read('aur-favorites',[]),orders:read('aur-orders',[]),reservations:read('aur-reservations',[]),lang:read('aur-lang','es'),category:'Todos',filter:'Todos',search:'',favoritesOnly:false};
-export function save(){for(const key of ['cart','favorites','orders','reservations','lang'])localStorage.setItem('aur-'+key,JSON.stringify(state[key]));}
+// Demo state lives only in this document. Legacy browser values are never read or deleted.
+const initialState=()=>({cart:[],favorites:[],orders:[],reservations:[],room:'',lang:'es',category:'Todos',filter:'Todos',search:'',favoritesOnly:false});
+export const state=initialState();
+export function resetDemo(){Object.assign(state,initialState());}
+// Existing interaction hooks intentionally do not persist anything.
+export function save(){}
 export const money=n=>'S/ '+n.toFixed(2);
 export const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export const t=(es,en)=>state.lang==='es'?es:en;

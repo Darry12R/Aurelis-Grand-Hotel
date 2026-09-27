@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+# El noindex se sirve en el HTML y en X-Robots-Tag; no bloquear su lectura.
