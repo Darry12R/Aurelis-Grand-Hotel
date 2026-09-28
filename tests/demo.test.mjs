@@ -131,8 +131,9 @@ test('noindex, crawlable robots and compatible Vercel headers are present', () =
   assert.match(csp, /connect-src 'none'/);
   assert.match(csp, /form-action 'none'/);
   assert.match(csp, /script-src 'self'/);
-  assert.match(csp, /https:\/\/fonts.googleapis.com/);
-  assert.match(csp, /https:\/\/fonts.gstatic.com/);
+  assert.match(csp, /font-src 'self';/);
+  assert.match(csp, /style-src 'self';/);
+  assert.doesNotMatch(csp, /https?:\/\//);
   assert.doesNotMatch(csp, /unsafe-inline|unsafe-eval|\*/);
   assert.equal(headers['X-Robots-Tag'], 'noindex, nofollow');
   assert.equal(headers['X-Content-Type-Options'], 'nosniff');

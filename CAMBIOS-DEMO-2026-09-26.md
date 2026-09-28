@@ -15,3 +15,7 @@ npm run check y las siete pruebas de npm test aprobados. Se verificaron estado t
 Ejecutar npm start y abrir http://127.0.0.1:4173. Aquí dist/ contiene los archivos fuente publicados: se conserva y no debe excluirse como si fuera una compilación desechable.
 
 El historial de autoría o generación de imágenes no sustituye una comprobación de derechos. Las licencias y la compatibilidad del alojamiento continúan pendientes. Los informes antiguos de qa/ corresponden a versiones anteriores.
+
+## Actualización del 27 de septiembre: recursos tipográficos locales
+
+Las fuentes ahora se sirven desde la propia demo, con archivos de licencia y procedencia en fonts/. NOVA también sirve Remix Icon 4.5.0 localmente con Apache-2.0 en icons/. Se retiraron los orígenes de Google Fonts y cdnjs de la CSP. Las menciones anteriores a carga externa de fuentes describen la versión inicial de esta corrección. Las imágenes permanecen intactas. El informe de seguimiento documenta las pruebas de esta actualización.

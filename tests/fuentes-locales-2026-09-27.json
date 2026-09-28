@@ -1,0 +1,32 @@
+{
+  "date": "2026-09-27T22:55:03.039Z",
+  "result": {
+    "slug": "aurelis",
+    "fontResults": [
+      {
+        "family": "Cormorant Garamond",
+        "loaded": true
+      },
+      {
+        "family": "Inter",
+        "loaded": true
+      }
+    ],
+    "externalHosts": [],
+    "views": [
+      {
+        "width": 1366,
+        "overflow": false,
+        "screenshot": "aurelis-fonts-1366-2026-09-27.png"
+      },
+      {
+        "width": 390,
+        "overflow": false,
+        "screenshot": "aurelis-fonts-390-2026-09-27.png"
+      }
+    ],
+    "failedResources": 0,
+    "cspViolations": 0,
+    "pageErrors": 0
+  }
+}

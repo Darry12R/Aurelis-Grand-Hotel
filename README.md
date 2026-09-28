@@ -33,7 +33,7 @@ El perfil permite consultar pedidos y solicitudes de muestra durante esta visita
 
 No existe backend, cuenta de usuario real, inventario en tiempo real, notificaciones, mensajería WhatsApp, pasarela bancaria ni hotel operativo. El número telefónico es de demostración. No se envían los formularios ni se realizan cargos. Los datos no se sincronizan entre dispositivos. El seguimiento del pedido avanza según el tiempo transcurrido de la simulación.
 
-Las marcas, chef, vinos y testimonios son ficticios. Las fotografías son interpretaciones generadas por IA; los menús degustación usan imágenes representativas. Los nombres gastronómicos franceses y las denominaciones de platos se conservan en el selector de idioma. Google Fonts requiere conexión; existen fuentes locales de respaldo.
+Las marcas, chef, vinos y testimonios son ficticios. Las fotografías son interpretaciones generadas por IA; los menús degustación usan imágenes representativas. Los nombres gastronómicos franceses y las denominaciones de platos se conservan en el selector de idioma. Cormorant Garamond e Inter se sirven localmente; las licencias OFL y procedencia están en dist/fonts/. No se consulta Google Fonts al cargar la demo.
 
 Para conectar una API, sustituir las operaciones de `state.js` y los controladores de envío en `app.js` por servicios autenticados. Validar nuevamente los formularios en el servidor, implementar disponibilidad, pagos, gestión de consentimiento y notificaciones antes de cualquier uso comercial real.
 

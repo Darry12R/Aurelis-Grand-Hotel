@@ -1,0 +1,7 @@
+Fuentes servidas localmente para esta demostración. 27 de septiembre de 2026.
+
+Fontsource 5.3.0, paquetes @fontsource/cormorant-garamond y @fontsource/inter.
+Origen de distribución: https://www.npmjs.com/package/@fontsource/cormorant-garamond
+https://www.npmjs.com/package/@fontsource/inter
+Licencias SIL Open Font License 1.1 conservadas junto a estos archivos.
+Se copian sin modificar los WOFF2 de los subconjuntos latin y latin-ext. El CSS se adapta para usar rutas locales y los nombres de familia existentes; en Manrope se conserva el eje variable de peso. Esta licencia corresponde a las fuentes, no a fotos, marcas ni contenidos del sitio.
